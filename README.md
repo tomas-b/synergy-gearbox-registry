@@ -12,14 +12,16 @@ An experimental dark theme featuring green accents, perfect for developer-focuse
 
 ## 🧩 Components
 
-### UI Components
+### Core Components (from Shadcn/UI)
+Standard Shadcn/UI components that work seamlessly with our themes:
 - **Button** - Versatile button component with multiple variants (default, destructive, outline, secondary, ghost, link)
 - **Card** - Container component with header, content, and footer sections
 - **Input** - Form input field with consistent styling
 - **Label** - Accessible label component for form controls
 
-### Special Components
-- **AI Loading Span** - Animated loading text with a shimmer effect, perfect for AI-powered features
+### Custom Components
+Components built specifically for this registry:
+- **AI Loading Span** - Animated loading text with a shimmer effect, perfect for AI-powered features and loading states
 
 ## Installation
 
