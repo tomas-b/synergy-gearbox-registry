@@ -8,6 +8,7 @@ pnpm-lock.yaml
 # Generated registry files
 public/r/
 dist/
+!public/index.html
 
 # Vercel
 .vercel/
