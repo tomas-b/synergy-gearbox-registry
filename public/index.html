@@ -189,9 +189,9 @@
 </head>
 <body>
     <h1>Synergy Component Registry</h1>
-    <p class="subtitle">A custom Shadcn/UI component registry with beautiful themes and components. Built for modern React applications with full TypeScript support.</p>
+    <p class="subtitle">A custom Shadcn/UI registry with themes and components.</p>
     
-    <h2>🚀 Quick Start</h2>
+    <h2>Installation</h2>
     <pre><code># Install a theme (choose one)
 npx shadcn@latest add https://tomas-b.github.io/synergy-gearbox-registry/r/theme-default.json
 npx shadcn@latest add https://tomas-b.github.io/synergy-gearbox-registry/r/theme-dark-green-experimental.json
@@ -201,68 +201,30 @@ npx shadcn@latest add https://tomas-b.github.io/synergy-gearbox-registry/r/butto
 npx shadcn@latest add https://tomas-b.github.io/synergy-gearbox-registry/r/card.json
 npx shadcn@latest add https://tomas-b.github.io/synergy-gearbox-registry/r/input.json
 npx shadcn@latest add https://tomas-b.github.io/synergy-gearbox-registry/r/label.json
+
+# Custom component
 npx shadcn@latest add https://tomas-b.github.io/synergy-gearbox-registry/r/ai-loading-span.json</code></pre>
 
-    <h2>🎨 Available Themes</h2>
-    <div class="theme-section">
-        <h3>Default Dark Theme</h3>
-        <p>A modern dark theme with carefully selected colors using the oklch color space for better color consistency.</p>
-        <p><code>npx shadcn@latest add https://tomas-b.github.io/synergy-gearbox-registry/r/theme-default.json</code></p>
-    </div>
-    <div class="theme-section">
-        <h3>Dark Green Experimental</h3>
-        <p>An experimental dark theme featuring green accents, perfect for developer-focused applications.</p>
-        <p><code>npx shadcn@latest add https://tomas-b.github.io/synergy-gearbox-registry/r/theme-dark-green-experimental.json</code></p>
-    </div>
+    <h2>Development</h2>
+    <pre><code># Install and build
+pnpm install
+pnpm run build
 
-    <h2>🧩 Core Components</h2>
-    <p style="color: var(--color-text-secondary); margin-bottom: 1.5rem;">Standard Shadcn/UI components that work seamlessly with our themes:</p>
-    <div class="component-grid">
-        <div class="component-card">
-            <h3>Button</h3>
-            <p>Versatile button component with multiple variants</p>
-            <code>npx shadcn@latest add https://tomas-b.github.io/synergy-gearbox-registry/r/button.json</code>
-        </div>
-        <div class="component-card">
-            <h3>Card</h3>
-            <p>Container component with header, content, and footer sections</p>
-            <code>npx shadcn@latest add https://tomas-b.github.io/synergy-gearbox-registry/r/card.json</code>
-        </div>
-        <div class="component-card">
-            <h3>Input</h3>
-            <p>Form input field with consistent styling</p>
-            <code>npx shadcn@latest add https://tomas-b.github.io/synergy-gearbox-registry/r/input.json</code>
-        </div>
-        <div class="component-card">
-            <h3>Label</h3>
-            <p>Accessible label component for form controls</p>
-            <code>npx shadcn@latest add https://tomas-b.github.io/synergy-gearbox-registry/r/label.json</code>
-        </div>
-    </div>
+# Preview locally
+pnpm run preview</code></pre>
 
-    <h2>🚀 Custom Components</h2>
-    <p style="color: var(--color-text-secondary); margin-bottom: 1.5rem;">Components built specifically for this registry:</p>
-    <div class="component-grid">
-        <div class="component-card" style="border-color: var(--color-success);">
-            <h3>AI Loading Span</h3>
-            <p>Animated loading text with shimmer effect for AI features</p>
-            <code>npx shadcn@latest add https://tomas-b.github.io/synergy-gearbox-registry/r/ai-loading-span.json</code>
-        </div>
-    </div>
+    <h3>Adding New Components</h3>
+    <ol style="color: var(--color-text-secondary); margin-left: 1.5rem;">
+        <li>Create component in <code style="background: var(--color-bg-primary); padding: 0.125rem 0.25rem; border-radius: 3px;">registry/synergy/[component-name]/</code></li>
+        <li>Add to <code style="background: var(--color-bg-primary); padding: 0.125rem 0.25rem; border-radius: 3px;">registry.json</code></li>
+        <li>Run <code style="background: var(--color-bg-primary); padding: 0.125rem 0.25rem; border-radius: 3px;">pnpm run build</code></li>
+        <li>Test with <code style="background: var(--color-bg-primary); padding: 0.125rem 0.25rem; border-radius: 3px;">npx shadcn@latest add [local-url]</code></li>
+    </ol>
 
-    <h2>✨ Features</h2>
-    <ul class="feature-list">
-        <li>Easy Installation</li>
-        <li>oklch Color System</li>
-        <li>Tree-shakeable Components</li>
-        <li>Fully Customizable</li>
-        <li>TypeScript Support</li>
-        <li>CORS Enabled</li>
-        <li>Static CDN Hosting</li>
-        <li>GitHub Pages Powered</li>
-    </ul>
+    <h2>Deployment</h2>
+    <p>Automatically deployed to GitHub Pages on push to main.</p>
 
-    <h2>📦 Registry Files</h2>
+    <h2>Registry Files</h2>
     <p>Direct links to registry JSON files:</p>
     <ul>
         <li><a href="/synergy-gearbox-registry/r/theme-default.json">theme-default.json</a></li>
@@ -273,12 +235,5 @@ npx shadcn@latest add https://tomas-b.github.io/synergy-gearbox-registry/r/ai-lo
         <li><a href="/synergy-gearbox-registry/r/label.json">label.json</a></li>
         <li><a href="/synergy-gearbox-registry/r/ai-loading-span.json">ai-loading-span.json</a></li>
     </ul>
-
-    <h2>🔗 Links</h2>
-    <p>
-        <a href="https://github.com/tomas-b/synergy-gearbox-registry">GitHub Repository</a> • 
-        <a href="https://ui.shadcn.com">Shadcn/UI</a> • 
-        <a href="https://github.com/tomas-b/synergy-gearbox-registry/issues">Report Issues</a>
-    </p>
 </body>
 </html>
