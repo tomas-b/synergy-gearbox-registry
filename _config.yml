@@ -1,0 +1,10 @@
+# GitHub Pages configuration
+remote_theme: jekyll/minima
+plugins:
+  - jekyll-remote-theme
+minima:
+  skin: dark # Use dark theme
+title: Synergy Component Registry
+description: A custom Shadcn/UI component registry with beautiful themes and components
+baseurl: "/synergy-gearbox-registry"
+url: "https://tomas-b.github.io"

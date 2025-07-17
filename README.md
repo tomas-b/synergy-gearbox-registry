@@ -1,19 +1,25 @@
 # Synergy Component Registry
 
-A custom Shadcn component registry for Synergy-branded components with oklch color system support.
+A custom Shadcn/UI component registry with beautiful themes and components. Built for modern React applications with full TypeScript support.
 
-## Themes
+## 🎨 Available Themes
 
-- **theme-default** - Default dark theme with Synergy brand colors
-- **theme-dark-green-experimental** - Experimental dark theme with green accents
+### Default Dark Theme
+A modern dark theme with carefully selected colors using the oklch color space for better color consistency.
 
-## Components
+### Dark Green Experimental
+An experimental dark theme featuring green accents, perfect for developer-focused applications.
 
-- **button** - Button component with Synergy styling
-- **card** - Card component with header, content, and footer sections
-- **input** - Form input field with Synergy styling
-- **label** - Accessible label component
-- **ai-loading-span** - Animated loading text with shimmer effect for AI operations
+## 🧩 Components
+
+### UI Components
+- **Button** - Versatile button component with multiple variants (default, destructive, outline, secondary, ghost, link)
+- **Card** - Container component with header, content, and footer sections
+- **Input** - Form input field with consistent styling
+- **Label** - Accessible label component for form controls
+
+### Special Components
+- **AI Loading Span** - Animated loading text with a shimmer effect, perfect for AI-powered features
 
 ## Installation
 
@@ -32,31 +38,63 @@ npx shadcn@latest add https://tomas-b.github.io/synergy-gearbox-registry/r/label
 npx shadcn@latest add https://tomas-b.github.io/synergy-gearbox-registry/r/ai-loading-span.json
 ```
 
-## Development
+## 🛠️ Development
 
-### Build the registry
+### Prerequisites
+- Node.js 18+
+- pnpm (recommended) or npm
 
-```bash
-npm install
-npm run build
-```
-
-### Test locally
+### Local Development
 
 ```bash
-npm run preview
-# Visit http://localhost:3000/r/button.json
+# Clone the repository
+git clone https://github.com/tomas-b/synergy-gearbox-registry.git
+cd synergy-gearbox-registry
+
+# Install dependencies
+pnpm install
+
+# Build the registry
+pnpm run build
+
+# Preview locally
+pnpm run preview
+# Visit http://localhost:3000
 ```
 
-### Deploy to Vercel
+### Adding New Components
 
-```bash
-npx vercel --prod
-```
+1. Create a new component in `registry/synergy/[component-name]/`
+2. Add the component to `registry.json`
+3. Run `pnpm run build` to generate the registry files
+4. Test with `npx shadcn@latest add [your-local-url]`
 
-## Features
+## 🚀 Deployment
 
-- Static file serving with CORS headers
-- Synergy branding with oklch color system
-- Custom AI loading animation component
-- Compatible with Shadcn CLI installation workflow
+This registry is automatically deployed to GitHub Pages when changes are pushed to the main branch. The GitHub Actions workflow handles:
+
+1. Installing dependencies with pnpm
+2. Building the registry files
+3. Deploying to GitHub Pages
+
+## 📝 License
+
+MIT License - feel free to use these components in your projects!
+
+## 🤝 Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+---
+
+Built with ❤️ using [Shadcn/UI](https://ui.shadcn.com)
+
+## ✨ Features
+
+- 🚀 **Easy Installation** - Install any component with a single command
+- 🎨 **oklch Color System** - Modern color space for consistent, accessible colors
+- 📦 **Tree-shakeable** - Only import what you need
+- 🔧 **Fully Customizable** - All components use CSS variables
+- 💻 **TypeScript Support** - Full type safety out of the box
+- 🌐 **CORS Enabled** - Use from any domain
+- ⚡ **Static Hosting** - Fast CDN delivery via GitHub Pages
