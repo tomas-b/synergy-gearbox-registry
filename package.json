@@ -4,12 +4,11 @@
   "description": "Synergy component registry for Shadcn CLI",
   "main": "index.js",
   "scripts": {
-    "build": "shadcn build && npm run validate",
+    "build": "mkdir -p public/r && shadcn build && npm run validate",
     "dev": "shadcn build --watch",
     "validate": "node scripts/validate-registry.js",
     "preview": "npx serve public",
-    "clean": "rm -rf public/r/*",
-    "prebuild": "npm run clean"
+    "clean": "rm -rf public/r/*"
   },
   "dependencies": {
     "@radix-ui/react-label": "^2.1.1",
@@ -30,5 +29,6 @@
   },
   "keywords": ["shadcn", "ui", "components", "synergy", "registry"],
   "author": "Synergy Team",
-  "license": "MIT"
+  "license": "MIT",
+  "packageManager": "pnpm@9.4.0"
 }
