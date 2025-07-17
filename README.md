@@ -21,15 +21,15 @@ Install components using the Shadcn CLI:
 
 ```bash
 # Install themes (choose one)
-npx shadcn@latest add https://synergy-gearbox-registry.vercel.app/r/theme-default.json
-npx shadcn@latest add https://synergy-gearbox-registry.vercel.app/r/theme-dark-green-experimental.json
+npx shadcn@latest add https://tomas-b.github.io/synergy-gearbox-registry/r/theme-default.json
+npx shadcn@latest add https://tomas-b.github.io/synergy-gearbox-registry/r/theme-dark-green-experimental.json
 
 # Install individual components
-npx shadcn@latest add https://synergy-gearbox-registry.vercel.app/r/button.json
-npx shadcn@latest add https://synergy-gearbox-registry.vercel.app/r/card.json
-npx shadcn@latest add https://synergy-gearbox-registry.vercel.app/r/input.json
-npx shadcn@latest add https://synergy-gearbox-registry.vercel.app/r/label.json
-npx shadcn@latest add https://synergy-gearbox-registry.vercel.app/r/ai-loading-span.json
+npx shadcn@latest add https://tomas-b.github.io/synergy-gearbox-registry/r/button.json
+npx shadcn@latest add https://tomas-b.github.io/synergy-gearbox-registry/r/card.json
+npx shadcn@latest add https://tomas-b.github.io/synergy-gearbox-registry/r/input.json
+npx shadcn@latest add https://tomas-b.github.io/synergy-gearbox-registry/r/label.json
+npx shadcn@latest add https://tomas-b.github.io/synergy-gearbox-registry/r/ai-loading-span.json
 ```
 
 ## Development

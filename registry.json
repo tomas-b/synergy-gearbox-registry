@@ -3,7 +3,7 @@
   "name": "synergy-gearbox-registry",
   "version": "1.0.0",
   "description": "Synergy branded components for Shadcn CLI",
-  "homepage": "https://synergy-gearbox-registry.vercel.app",
+  "homepage": "https://tomas-b.github.io/synergy-gearbox-registry",
   "author": "Synergy Team",
   "items": [
     {
